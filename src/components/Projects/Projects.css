@@ -1,0 +1,34 @@
+.project-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+} 
+
+
+  /* Style the back side */
+  .card {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background-color: white;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid rgba(0,0,0, 0.1);
+  } 
+
+  
+  .card img.logo {
+    width: 20%;
+  }
+
+
+@media screen and (max-width: 780px) {
+  .flex-container i.fas {
+    display: none;
+  }
+}
