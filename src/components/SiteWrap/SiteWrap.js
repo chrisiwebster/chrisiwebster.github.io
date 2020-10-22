@@ -27,16 +27,16 @@ class SiteWrap extends React.Component{
         return (  
         <div className={this.state.active ? 'site-wrap move-over' : 'site-wrap'}>
          <i onClick={this.state.active ? this.handleClickOff : this.handleClickOn} className={this.state.active ? 'fas fa-times fa-3x' : 'fas fa-hamburger fa-3x'}></i>
-        <BrowserRouter basename="/">
-        <Switch>
-          <Route exact path="/">
+         <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Switch>
+          <Route exact path={process.env.PUBLIC_URL + '/'}>
             <Home />
           </Route>
-          <Route path="/projects">
+          <Route exact path={process.env.PUBLIC_URL + '/projects'}>
             <Projects />
           </Route>
         </Switch>
-        </BrowserRouter>
+     </BrowserRouter>
         </div>
       )
     }
