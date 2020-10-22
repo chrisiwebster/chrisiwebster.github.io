@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route, } from "react-router-dom";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Home from '../src/components/Home/Home';
+import Projects from '../src/components/Projects/Projects';
 
 ReactDOM.render(
   <React.StrictMode>
+  <BrowserRouter basename={process.env.PUBLIC_URL}/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
