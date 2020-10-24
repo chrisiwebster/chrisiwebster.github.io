@@ -7,7 +7,7 @@ export class NavBar extends React.Component{
     render() {
         return (
             <nav>
-                <ul className="navigation">
+                <ul className="navigation" role="navigation">
                    <li><Link className="nav-item" to="/">Home</Link></li>
                    <li><Link className="nav-item" to="/projects">Projects</Link></li>
                    <li><a className="nav-item" href="https://www.linkedin.com/in/christinawebster" target="_blank">LinkedIn</a></li>

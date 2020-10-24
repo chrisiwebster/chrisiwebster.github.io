@@ -23,6 +23,7 @@
   z-index: 1; /* brings it in front of the nav menu*/
   background-color:  white; /* Needs a background or else the nav will show through */
   overflow: hidden;
+  touch-action: none;
   }
 
   .move-over {
