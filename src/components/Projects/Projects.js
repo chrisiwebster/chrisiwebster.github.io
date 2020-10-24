@@ -7,7 +7,8 @@ import './Projects.css';
 class Projects extends React.Component {
 
     componentDidMount(){
-        document.title = "Chrisi Webster | Projects"
+        document.title = "Chrisi Webster | Projects";
+
       }
 
      
@@ -26,7 +27,7 @@ class Projects extends React.Component {
               {myProjects.map((project) => {
                 return  <div className="card">
                      <h2>{project.title}</h2>
-                   <a href={project.url}> <img className="logo" alt={project.language} src={project.logo}/></a>
+                   <a href={project.url} alt={project.title} title="Link to project" target="_blank"> <img className="logo" alt={project.language} src={project.logo}/></a>
                    <p>Click the logo see the full project</p>
                   </div>
              
@@ -37,8 +38,4 @@ class Projects extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <Projects />,
-    document.getElementById('root')
-  );
 export default Projects;

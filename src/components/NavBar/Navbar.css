@@ -20,7 +20,7 @@
    text-decoration: none;
 }
 
-a.nav-item , 
+a.nav-item, 
 a.nav-item:visited {
    display: block;
    padding: 20px;
@@ -29,9 +29,11 @@ a.nav-item:visited {
    transition: color 0.2s, background 0.5s;
 }
 
+
 a.nav-item:hover {
    color: grey;
    background-color: rgba(238,200,202, .5);
+   cursor: pointer;
 }
 
 .move-over {

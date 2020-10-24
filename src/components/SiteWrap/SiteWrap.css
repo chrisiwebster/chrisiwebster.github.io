@@ -7,7 +7,8 @@
     padding: 5px;
   }
   
-  .fa-hamburger:hover{
+  .fa-hamburger:hover,
+  .fa-times:hover{
   cursor: pointer;
   }
   

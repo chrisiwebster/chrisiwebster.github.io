@@ -1,6 +1,6 @@
 import React from 'react';
-import { MenuItems } from './MenuItems';
 import './Navbar.css';
+import { Link} from "react-router-dom";
 
 
 export class NavBar extends React.Component{
@@ -8,16 +8,15 @@ export class NavBar extends React.Component{
         return (
             <nav>
                 <ul className="navigation">
-                    {MenuItems.map((item, index) => {// This loops through the Menu items array and returns a listed item
-                        return (
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>{item.title}</a>
-                            </li>
-                        )
-                    })}
-                </ul>
+                   <li><Link className="nav-item" to="/">Home</Link></li>
+                   <li><Link className="nav-item" to="/projects">Projects</Link></li>
+                   <li><a className="nav-item" href="https://www.linkedin.com/in/christinawebster" target="_blank">LinkedIn</a></li>
+                   <li><a className="nav-item" href="https://www.github.com/chrisiwebster" target="_blank">GitHub</a></li>
+            </ul>
+                
          </nav>
-            
+
+      
         )
     }
 }
