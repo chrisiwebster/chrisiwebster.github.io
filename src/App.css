@@ -12,8 +12,10 @@ a:hover {
 
 a:visited {
  text-decoration: none;
- color: rgb(121, 59, 86);
+ color: inherit;
 }
+
+
 .flex-container {
  display: flex;
  align-items: center;

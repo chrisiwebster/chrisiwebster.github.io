@@ -26,9 +26,10 @@ class SiteWrap extends React.Component{
 
     render() {
         return (  
-   
+        <div>
+      <NavBar onClick={this.handleClickOff}/>
         <div className={this.state.active ? 'site-wrap move-over' : 'site-wrap'}>
-         <i onClick={this.state.active ? this.handleClickOff : this.handleClickOn} className={this.state.active ? 'fas fa-times fa-3x' : 'fas fa-hamburger fa-3x'}></i>
+         <i tabindex="0" onKeyDown={this.state.active ? this.handleClickOff : this.handleClickOn} onClick={this.state.active ? this.handleClickOff : this.handleClickOn} className={this.state.active ? 'fas fa-times fa-3x' : 'fas fa-hamburger fa-3x'}></i>
 
   
          <HashRouter basename={process.env.PUBLIC_URL}> 
@@ -40,7 +41,7 @@ class SiteWrap extends React.Component{
 
       
         </div>
-     
+        </div>
       )
     }
 }
