@@ -25,7 +25,7 @@ export const myProjects = [
     },
     {
         title: 'Changing icon clock',
-        description: 'To practice using Date object',
+        description: 'To practise using Date object',
         url: 'https://chrisiwebster.github.io/clock-vanillajs/',
         logo: JavaScriptLogo,
         language: 'JavaScript'
