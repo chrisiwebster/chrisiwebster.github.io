@@ -16,14 +16,13 @@
     /* Critical position and size styles */
   min-height: 100vh;
   min-width: 100vw;
-  position: fixed;
+  position: relative;
   top: 0;
   bottom: 100%;
   padding: 10px;
   z-index: 1; /* brings it in front of the nav menu*/
   background-color:  white; /* Needs a background or else the nav will show through */
-  overflow: scroll;
-
+  touch-action: cross-slide-y;
   }
 
   .move-over {
