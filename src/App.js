@@ -1,14 +1,23 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar/Navbar';
-import SiteWrap from './components/SiteWrap/SiteWrap';
+import NavBar from '../src/components/NavBar/Navbar';
+import Home from '../src/components/Home/Home';
+import Projects from '../src/components/Projects/Projects';
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 
 class App extends React.Component {
   render() {
   return (
     <div>
-      <SiteWrap />
+    <NavBar/>
+    <HashRouter basename={process.env.PUBLIC_URL}> 
+        <Switch>
+          <Route exact path ="/" component={Home} />
+          <Route exact path="/projects" component={Projects} />
+          </Switch>
+          </HashRouter> 
+
     </div>
   );
 }

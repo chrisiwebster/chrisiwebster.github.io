@@ -1,35 +1,4 @@
-/* SITE WRAP FUNCTIONALITY */
-.site-wrap, .fa-hamburger {
-    transition: left 0.2s;
-  }
-  
-  .fa-hamburger {
-    padding: 5px;
-  }
-  
-  .fa-hamburger:hover,
-  .fa-times:hover{
-  cursor: pointer;
-  }
-  
-  .site-wrap {
-    /* Critical position and size styles */
-  min-height: 100vh;
-  min-width: 100vw;
-  position: relative;
-  top: 0;
-  bottom: 100%;
-  padding: 10px;
-  z-index: 1; /* brings it in front of the nav menu*/
-  background-color:  white; /* Needs a background or else the nav will show through */
-  touch-action: cross-slide-y;
-  }
 
-  .move-over {
-    left: 200px !important; /*Had to put important so it over-rode the left 0 below'*/
-    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
- 
- }
 
 
  
