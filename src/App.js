@@ -10,14 +10,14 @@ class App extends React.Component {
   render() {
   return (
     <div>
-    <NavBar/>
+  <NavBar/>
     <HashRouter basename={process.env.PUBLIC_URL}> 
         <Switch>
           <Route exact path ="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
           </Switch>
           </HashRouter> 
-
+  
     </div>
   );
 }

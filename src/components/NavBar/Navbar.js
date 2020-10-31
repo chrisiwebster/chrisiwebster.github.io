@@ -22,11 +22,11 @@ export class NavBar extends React.Component{
     render() {
         return (
          <div>
-             <i tabindex="0" onKeyDown={this.state.active ? this.handleClickOff : this.handleClickOn} onClick={this.state.active ? this.handleClickOff : this.handleClickOn} className={this.state.active ? 'fas fa-times fa-3x' : 'fas fa-hamburger fa-3x'}></i>
+             <i tabindex="0" onKeyDown={this.state.active ? this.handleClickOff : this.handleClickOn} onClick={this.state.active ? this.handleClickOff : this.handleClickOn} className={this.state.active ? 'fas fa-times move-over' : 'fas fa-hamburger'}></i>
             <nav>
                 <ul className={this.state.active ? 'navigation active' : 'navigation'} role="navigation">
-                   <li><Link className="nav-item" to="/">Home</Link></li>
-                   <li><Link className="nav-item" to="/projects">Projects</Link></li>
+                   <li onClick={this.handleClickOff}><Link className="nav-item" to="/">Home</Link></li>
+                   <li onClick={this.handleClickOff}><Link className="nav-item" to="/projects">Projects</Link></li>
                    <li><a className="nav-item" href="https://www.linkedin.com/in/christinawebster" target="_blank">LinkedIn</a></li>
                    <li><a className="nav-item" href="https://www.github.com/chrisiwebster" target="_blank">GitHub</a></li>
             </ul>     
